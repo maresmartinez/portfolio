@@ -1,0 +1,18 @@
+.navbar {
+  text-transform: uppercase;
+  background-color: #0C3B55!important;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.first {
+  color: #FFD700;
+  text-transform: uppercase;
+}
+
+#showcase {
+  width: 100%;
+}
