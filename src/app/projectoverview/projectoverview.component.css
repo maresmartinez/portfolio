@@ -1,0 +1,13 @@
+.projectthumbnail {
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px white;
+  margin-bottom: 20px;
+}
+
+#projects .row {
+  margin-bottom: 30px;
+}
+
+.project {
+  margin-bottom: 30px;
+}

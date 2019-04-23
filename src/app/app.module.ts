@@ -9,6 +9,8 @@ import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { ContactComponent } from './components/contact/contact.component';
 import { HomeComponent } from './components/pages/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ProjectoverviewComponent } from './projectoverview/projectoverview.component';
+import { ProjectoverviewlistComponent } from './projectoverviewlist/projectoverviewlist.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { FooterComponent } from './components/footer/footer.component';
     HeaderComponent,
     ContactComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    ProjectoverviewComponent,
+    ProjectoverviewlistComponent
   ],
   imports: [
     BrowserModule,

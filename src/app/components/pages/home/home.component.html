@@ -1,6 +1,6 @@
-<main class="container">
-  <div class="light">
-    <div id="skills">
+<main>
+  <div class="light container">
+    <div id="skills" class="container">
       <h2>Technical Skills</h2>
       <p><strong>Back-end</strong>: C#, Java, Web Services<br>
         <strong>Front-end</strong>: JavaScript, ASP.NET, jQuery, Bootstrap, HTML5, CSS3, JSP, AJAX, JSON, XML<br>
@@ -8,62 +8,20 @@
         <strong>Servers/Data</strong>: Oracle, SQL Server, Tomcat, ADO.NET, JDBC<br>
         IDEs: Visual Studio Code, NetBeans, Visual Studio Community, Notepad++<br></p>
     </div>
-    <div id="aboutme">
+    <div id="aboutme" class="container">
+      <h2>About Me</h2>
       <div class="row">
-        <div class="col-3">
-          <img id="headshot" class="img-fluid" [src]="'assets/images/headshot.jpg'" alt="Mariel smiling">
+        <div class="col-md-3">
+          <img id="headshot" [src]="'assets/images/headshot.jpg'" alt="Mariel smiling">
         </div>
-        <div class="col-9">
-          <h2>About Me</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean feugiat elit justo. Aenean venenatis risus
-            eu
-            eros mattis ornare. Nullam at gravida justo, sit amet pulvinar nisi. Donec sagittis velit id dignissim
-            gravida.
-            Nunc viverra fringilla ipsum in bibendum. </p>
+        <div class="col-md-9">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean feugiat elit justo. Aenean venenatis risus eu eros mattis ornare. Nullam at gravida justo, sit amet pulvinar nisi. Donec sagittis velit id dignissim gravida. Nunc viverra fringilla ipsum in bibendum. </p>
           <p>Maecenas egestas non eros eu dapibus. Proin congue augue quis tincidunt eleifend. Nullam varius porttitor
             urna,
             nec laoreet mi finibus quis. Aenean pellentesque, ipsum eget tincidunt ultricies, odio erat.</p>
         </div>
       </div>
-
     </div>
   </div>
-  <div id="projects">
-    <div class="row">
-      <div class="col-4">
-        <img class="projectthumbnail img-fluid" [src]="'assets/images/project_dnd.png'"
-          alt="Screenshot of Dungeons and Dragons application">
-      </div>
-      <div class="col-8">
-        <h5>Project</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean feugiat elit justo. Aenean venenatis risus eu
-          eros mattis ornare.</p>
-        <button class="btn btn-light">Live Demo</button>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-4">
-        <img class="projectthumbnail img-fluid" [src]="'assets/images/project_dnd.png'"
-          alt="Screenshot of Dungeons and Dragons application">
-      </div>
-      <div class="col-8">
-        <h5>Project</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean feugiat elit justo. Aenean venenatis risus eu
-          eros mattis ornare.</p>
-        <button class="btn btn-light">Live Demo</button>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-4">
-        <img class="projectthumbnail img-fluid" [src]="'assets/images/project_dnd.png'"
-          alt="Screenshot of Dungeons and Dragons application">
-      </div>
-      <div class="col-8">
-        <h5>Project</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean feugiat elit justo. Aenean venenatis risus eu
-          eros mattis ornare.</p>
-        <button class="btn btn-light">Live Demo</button>
-      </div>
-    </div>
-  </div>
+  <app-projectoverviewlist></app-projectoverviewlist>
 </main>
