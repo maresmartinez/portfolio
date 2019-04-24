@@ -1,0 +1,15 @@
+<div class="project">
+    <h5>{{ projectoverview.name }}</h5>
+    <div class="row">
+      <div class="col-md">
+        <img class="projectthumbnail img-fluid" [src]="projectoverview.imageUrl"
+          alt="Screenshot of Dungeons and Dragons application" />
+      </div>
+      <div class="col-md">
+        <p>{{projectoverview.description}}</p>
+        <a [href]="projectoverview.codeUrl" target="_blank" 
+        class="btn {{ projectoverview.liveDemo ? 'btn-light' : 'btn-outline-light' }}">
+          {{ projectoverview.liveDemo ? 'Live Demo' : 'See Code' }}</a>
+      </div>
+    </div>
+</div>
