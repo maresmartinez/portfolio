@@ -12,6 +12,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ProjectoverviewComponent } from './components/projectoverview/projectoverview.component';
 import { ProjectoverviewlistComponent } from './components/projectoverviewlist/projectoverviewlist.component';
 import { ShowcaseComponent } from './components/showcase/showcase.component';
+import { AboutmeComponent } from './components/pages/aboutme/aboutme.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ShowcaseComponent } from './components/showcase/showcase.component';
     FooterComponent,
     ProjectoverviewComponent,
     ProjectoverviewlistComponent,
-    ShowcaseComponent
+    ShowcaseComponent,
+    AboutmeComponent
   ],
   imports: [
     BrowserModule,

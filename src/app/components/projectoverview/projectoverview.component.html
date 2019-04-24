@@ -3,13 +3,17 @@
     <div class="row">
       <div class="col-md">
         <img class="projectthumbnail img-fluid" [src]="projectoverview.imageUrl"
-          alt="Screenshot of Dungeons and Dragons application" />
+          alt="Screenshot of {{ projectoverview.name }} application" />
       </div>
       <div class="col-md">
         <p>{{projectoverview.description}}</p>
-        <a [href]="projectoverview.codeUrl" target="_blank" 
-        class="btn {{ projectoverview.liveDemo ? 'btn-light' : 'btn-outline-light' }}">
-          {{ projectoverview.liveDemo ? 'Live Demo' : 'See Code' }}</a>
+        <a [href]="projectoverview.demoUrl" [hidden]="!projectoverview.demoUrl"
+         target="_blank" 
+        class="btn btn-light">
+          Live Demo</a>
+          <a [href]="projectoverview.codeUrl" target="_blank" 
+        class="btn btn-outline-light">
+          See Code</a>
       </div>
     </div>
 </div>

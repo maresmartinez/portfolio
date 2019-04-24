@@ -4,5 +4,5 @@ export class ProjectDetails {
   description: string;
   codeUrl: string;
   imageUrl: string;
-  liveDemo: boolean;
+  demoUrl?: string;
 }
