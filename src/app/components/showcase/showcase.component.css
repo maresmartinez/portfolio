@@ -1,0 +1,21 @@
+#showcase {
+  background: url('../../../assets/images/showcase_typing.jpg') no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+
+#showcase h1 {
+  font-size: 55px;
+}
+
+#showcase p {
+  font-size: 20px;
+}
+
+.description {
+  min-height: 300px;
+  padding: 10%;
+  background-color: rgba(0, 0, 0, 0.6);
+}

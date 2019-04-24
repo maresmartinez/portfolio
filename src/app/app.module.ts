@@ -11,6 +11,7 @@ import { HomeComponent } from './components/pages/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ProjectoverviewComponent } from './projectoverview/projectoverview.component';
 import { ProjectoverviewlistComponent } from './projectoverviewlist/projectoverviewlist.component';
+import { ShowcaseComponent } from './components/showcase/showcase.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ProjectoverviewlistComponent } from './projectoverviewlist/projectoverv
     HomeComponent,
     FooterComponent,
     ProjectoverviewComponent,
-    ProjectoverviewlistComponent
+    ProjectoverviewlistComponent,
+    ShowcaseComponent
   ],
   imports: [
     BrowserModule,
