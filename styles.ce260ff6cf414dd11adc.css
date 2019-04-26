@@ -1,0 +1,1 @@
+body{background-color:#ececec!important}main{margin:auto;background-color:#fff;box-shadow:5px 5px 6px rgba(0,0,0,.16);width:80%}main>.container:first-child{padding-top:40px;padding-bottom:40px}main>.container>*{margin-bottom:40px}main>.container>:last-child{margin-bottom:0}@media (max-width:768px){main{width:100%}}
