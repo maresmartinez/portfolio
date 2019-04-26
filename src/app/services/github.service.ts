@@ -25,7 +25,7 @@ export class GithubService {
   }
 
   getRepos(): Observable<ProjectDetails[]> {
-    const url = `${this.url}/users/${this.username}/repos${this.authorization}`;
+    const url = `${this.url}/users/${this.username}/repos${this.authorization}&sort=updated`;
     return this.http.get<ProjectDetails[]>(url, httpOptions);
   }
 }
