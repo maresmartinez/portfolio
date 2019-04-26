@@ -12,9 +12,9 @@ const httpOptions = {
 
 export class GithubService {
 
-  url: 'https://api.github.com/';
-  username: 'maresmartinez';
-  authorization: '?client_id=f2526e89e2f01b0ffe20&client_secret=b1ac637451676d3fbb3495bcfa2f59fd96f493e3';
+  url: string = 'https://api.github.com/';
+  username: string = 'maresmartinez';
+  authorization: string = '?client_id=f2526e89e2f01b0ffe20&client_secret=b1ac637451676d3fbb3495bcfa2f59fd96f493e3';
 
   constructor(private http: HttpClient) { }
 
