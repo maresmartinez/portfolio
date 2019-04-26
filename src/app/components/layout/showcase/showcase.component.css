@@ -1,5 +1,5 @@
 #showcase {
-  background: url('../../../assets/images/showcase_typing.jpg') no-repeat;
+  background: url('../../../../assets/images/showcase_typing.jpg') no-repeat;
   background-size: 100% 100%;
   text-align: center;
   color: white;
@@ -17,5 +17,5 @@
 .description {
   min-height: 300px;
   padding: 10%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.7);
 }

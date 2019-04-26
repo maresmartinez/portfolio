@@ -1,50 +1,52 @@
-<div>
-  <app-showcase></app-showcase>
-  <app-contact></app-contact>
-  <main>
-    <div class="container">
-      <div id="skills" class="container">
-        <h2>Technical Skills</h2>
-        <table class="table table-striped">
-          <tbody>
-            <tr>
-              <th scope="row">Back-End</th>
-              <td>C#, Java, Web Services</td>
-            </tr>
-            <tr>
-              <th scope="row">Front-End</th>
-              <td>JavaScript, ASP.NET, jQuery, Bootstrap, HTML5, CSS3, JSP, AJAX, JSON, XML</td>
-            </tr>
-            <tr>
-              <th scope="row">Frameworks/Tool</th>
-              <td>Git Bash, Adobe Photoshop, Adobe XD, NPM</td>
-            </tr>
-            <tr>
-              <th scope="row">Servers/Data</th>
-              <td>Oracle, SQL Server, Tomcat, ADO.NET, JDBC</td>
-            </tr>
-            <tr>
-              <th scope="row">IDEs</th>
-              <td>Visual Studio Code, NetBeans, Visual Studio Community, Notepad++</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div id="aboutme" class="container">
-        <h2>About Me</h2>
-        <div class="row">
-          <div class="col-md-3">
-            <img id="headshot" [src]="'assets/images/headshot.jpg'" alt="Mariel smiling">
-          </div>
-          <div class="col-md-9">
-              <!-- TODO: Polish this up -->
-              <p>My name is Mariel Martinez. I go by Mares. I just graduated with a Computer Programmer Diploma from Sheridan College, and also have a Bachelor’s of Business Administration (BBA) from Schulich at York University. Before coming to Sheridan, I worked in the sales department at Trend Hunter, a market research firm in Toronto. There, I worked with executives at Fortune 500 companies to accelerate their innovation process using Trend Hunter's consumer insights platform.</p>
-              <p>Working at Trend Hunter sparked my passion for innovation. I decided to go back to school because I want to learn how to build the future, instead of telling other people about it. I feel that my experience working with clients in sales will give me a unique perspective as a developer.</p>
-            <a class="btn btn-outline-dark" routerLink="/aboutme">Learn More</a>
-          </div>
+<main>
+  <div class="container">
+    <div id="skills" class="container">
+      <h2>Technical Skills</h2>
+      <table class="table table-striped">
+        <tbody>
+          <tr>
+            <th scope="row">Back-End</th>
+            <td>C#, Java, Web Services</td>
+          </tr>
+          <tr>
+            <th scope="row">Front-End</th>
+            <td>JavaScript, ASP.NET, jQuery, Bootstrap, HTML5, CSS3, JSP, AJAX, JSON, XML</td>
+          </tr>
+          <tr>
+            <th scope="row">Frameworks/Tool</th>
+            <td>Git Bash, Adobe Photoshop, Adobe XD, NPM</td>
+          </tr>
+          <tr>
+            <th scope="row">Servers/Data</th>
+            <td>Oracle, SQL Server, Tomcat, ADO.NET, JDBC</td>
+          </tr>
+          <tr>
+            <th scope="row">IDEs</th>
+            <td>Visual Studio Code, NetBeans, Visual Studio Community, Notepad++</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="aboutme" class="container">
+      <h2>About Me</h2>
+      <div class="row">
+        <div class="col-md-3">
+          <img id="headshot" [src]="'assets/images/headshot.jpg'" alt="Mariel smiling">
+        </div>
+        <div class="col-md-9">
+          <!-- TODO: Polish this up -->
+          <p>My name is Mariel Martinez. I go by Mares. I just graduated with a Computer Programmer Diploma from
+            Sheridan College, and also have a Bachelor’s of Business Administration (BBA) from Schulich at York
+            University. Before coming to Sheridan, I worked in the sales department at Trend Hunter, a market research
+            firm in Toronto. There, I worked with executives at Fortune 500 companies to accelerate their innovation
+            process using Trend Hunter's consumer insights platform.</p>
+          <p>Working at Trend Hunter sparked my passion for innovation. I decided to go back to school because I want to
+            learn how to build the future, instead of telling other people about it. I feel that my experience working
+            with clients in sales will give me a unique perspective as a developer.</p>
+          <a class="btn btn-outline-dark" routerLink="/aboutme">Learn More</a>
         </div>
       </div>
     </div>
-    <app-projectoverviewlist repoLimit="3"></app-projectoverviewlist>
-  </main>
-</div>
+  </div>
+  <app-projectoverviewlist repoLimit="3"></app-projectoverviewlist>
+</main>

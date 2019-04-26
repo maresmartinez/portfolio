@@ -5,14 +5,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { HeaderComponent } from './components/header/header.component';
+import { HeaderComponent } from './components/layout/header/header.component';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
-import { ContactComponent } from './components/contact/contact.component';
+import { ContactComponent } from './components/layout/contact/contact.component';
 import { HomeComponent } from './components/pages/home/home.component';
-import { FooterComponent } from './components/footer/footer.component';
+import { FooterComponent } from './components/layout/footer/footer.component';
 import { ProjectoverviewComponent } from './components/projectoverview/projectoverview.component';
 import { ProjectoverviewlistComponent } from './components/projectoverviewlist/projectoverviewlist.component';
-import { ShowcaseComponent } from './components/showcase/showcase.component';
+import { ShowcaseComponent } from './components/layout/showcase/showcase.component';
 import { AboutmeComponent } from './components/pages/aboutme/aboutme.component';
 import { ProjectsComponent } from './components/pages/projects/projects.component';
 import { TutorialsComponent } from './components/pages/tutorials/tutorials.component';
