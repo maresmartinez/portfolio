@@ -12,10 +12,15 @@ main {
 
 main > .container:first-child {
   padding-top: 40px;
+  padding-bottom: 40px;
 }
 
-main > * {
+main > .container > * {
   margin-bottom: 40px;
+}
+
+main > .container > *:last-child {
+  margin-bottom: 0px;
 }
 
 @media (max-width: 768px) { 
