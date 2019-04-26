@@ -2,6 +2,6 @@
     <div class="container">
         <h2>Projects</h2>
         <app-projectoverview *ngFor="let projectoverview of projectoverviews" [projectoverview]="projectoverview"></app-projectoverview>
-        <a id="seeportfolio" class="btn btn-lg btn-outline-light btn-block" href="#" role="button">See More</a>
+        <a id="seeportfolio" class="btn btn-lg btn-outline-light btn-block" routerLink="/projects" role="button">See More</a>
     </div>
 </div>

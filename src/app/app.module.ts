@@ -13,6 +13,8 @@ import { ProjectoverviewComponent } from './components/projectoverview/projectov
 import { ProjectoverviewlistComponent } from './components/projectoverviewlist/projectoverviewlist.component';
 import { ShowcaseComponent } from './components/showcase/showcase.component';
 import { AboutmeComponent } from './components/pages/aboutme/aboutme.component';
+import { ProjectsComponent } from './components/pages/projects/projects.component';
+import { TutorialsComponent } from './components/pages/tutorials/tutorials.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { AboutmeComponent } from './components/pages/aboutme/aboutme.component';
     ProjectoverviewComponent,
     ProjectoverviewlistComponent,
     ShowcaseComponent,
-    AboutmeComponent
+    AboutmeComponent,
+    ProjectsComponent,
+    TutorialsComponent
   ],
   imports: [
     BrowserModule,

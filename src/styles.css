@@ -2,3 +2,24 @@
 body {
   background-color: #ECECEC!important;
 }
+
+main {
+  margin:  auto;
+  background-color: white;
+  box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.16);
+  width: 80%;
+}
+
+main > .container:first-child {
+  padding-top: 40px;
+}
+
+main > * {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 768px) { 
+  main {
+    width: 100%;
+  }
+}
