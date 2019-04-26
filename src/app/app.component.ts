@@ -17,5 +17,8 @@ export class AppComponent implements OnInit {
     this.githubService.getRepos().subscribe(repos => {
       console.log(repos);
     });
+    this.githubService.getUser().subscribe(user => {
+      console.log(user);
+    });
   }
 }

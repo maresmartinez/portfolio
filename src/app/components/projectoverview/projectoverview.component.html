@@ -1,19 +1,10 @@
 <div class="project">
-    <h5>{{ projectoverview.name }}</h5>
-    <div class="row">
-      <div class="col-md">
-        <img class="projectthumbnail img-fluid" [src]="projectoverview.imageUrl"
-          alt="Screenshot of {{ projectoverview.name }} application" />
-      </div>
-      <div class="col-md">
-        <p>{{projectoverview.description}}</p>
-        <a [href]="projectoverview.demoUrl" [hidden]="!projectoverview.demoUrl"
-         target="_blank" 
-        class="btn btn-light">
-          Live Demo</a>
-          <a [href]="projectoverview.codeUrl" target="_blank" 
-        class="btn btn-outline-light">
-          See Code</a>
-      </div>
-    </div>
+  <h5>{{ projectoverview.name }}</h5>
+  <img class="projectthumbnail img-fluid" [src]="projectoverview.imageUrl"
+    alt="Screenshot of {{ projectoverview.name }} application" [hidden]="!projectoverview.imageUrl" />
+  <p>{{projectoverview.description}}</p>
+  <a [href]="projectoverview.homepage" [hidden]="!projectoverview.has_pages" target="_blank" class="btn btn-light">
+    Live Demo</a>
+  <a [href]="projectoverview.html_url" target="_blank" class="btn btn-outline-light">
+    See Code</a>
 </div>

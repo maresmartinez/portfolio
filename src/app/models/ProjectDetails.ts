@@ -1,8 +1,9 @@
 export class ProjectDetails {
-  id: number;
-  name: string;
-  description: string;
-  codeUrl: string;
-  imageUrl: string;
-  demoUrl?: string;
+  'id': number;
+  'name': string;
+  'description': string;
+  'html_url': string;
+  'homepage'?: string;
+  'has_pages': boolean;
+  'imageUrl'?: string;
 }
