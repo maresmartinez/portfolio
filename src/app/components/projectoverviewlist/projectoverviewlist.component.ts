@@ -7,7 +7,7 @@ import { ProjectDetails } from '../../models/ProjectDetails';
   styleUrls: ['./projectoverviewlist.component.css']
 })
 export class ProjectoverviewlistComponent implements OnInit {
-  
+
   projectoverviews: ProjectDetails[];
 
   constructor() { }

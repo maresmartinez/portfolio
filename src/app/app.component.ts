@@ -1,22 +1,21 @@
-import { Component, OnInit } from '@angular/core';
-import { Router, NavigationEnd } from '@angular/router';
+import { Component, OnInit} from '@angular/core';
+import { GithubService } from './services/github.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  providers: [GithubService]
 })
+
 export class AppComponent implements OnInit {
   title = 'Mares Martinez | Portfolio';
 
-  constructor(private router: Router) { }
+  constructor(private githubService: GithubService) { }
 
   ngOnInit() {
-    this.router.events.subscribe((evt) => {
-        if (!(evt instanceof NavigationEnd)) {
-            return;
-        }
-        window.scrollTo(0, 0);
+    this.githubService.getRepos().subscribe(repos => {
+      console.log(repos);
     });
-}
+  }
 }
