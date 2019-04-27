@@ -20,6 +20,8 @@ import { RaspberrypiwebserverComponent } from './components/pages/tutorials/rasp
 import { SetupaddsComponent } from './components/pages/tutorials/setupadds/setupadds.component';
 import { UsingwdsComponent } from './components/pages/tutorials/usingwds/usingwds.component';
 import { AddsforestComponent } from './components/pages/tutorials/addsforest/addsforest.component';
+import { ReportoverviewComponent } from './components/reportoverview/reportoverview.component';
+import { ReportoverviewlistComponent } from './components/reportoverviewlist/reportoverviewlist.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import { AddsforestComponent } from './components/pages/tutorials/addsforest/add
     RaspberrypiwebserverComponent,
     SetupaddsComponent,
     UsingwdsComponent,
-    AddsforestComponent
+    AddsforestComponent,
+    ReportoverviewComponent,
+    ReportoverviewlistComponent
   ],
   imports: [
     BrowserModule,

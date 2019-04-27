@@ -1,0 +1,9 @@
+div {
+  margin-bottom: 40px;
+}
+
+img {
+  width: 80%;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.16);
+  margin-bottom: 20px;
+}
