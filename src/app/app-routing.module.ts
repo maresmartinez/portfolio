@@ -5,6 +5,7 @@ import { AboutmeComponent } from './components/pages/aboutme/aboutme.component';
 import { ProjectsComponent } from './components/pages/projects/projects.component';
 import { TutorialsComponent } from './components/pages/tutorials/tutorials.component';
 import { RaspberrypiwebserverComponent } from './components/pages/tutorials/raspberrypiwebserver/raspberrypiwebserver.component';
+import { SetupaddsComponent } from './components/pages/tutorials/setupadds/setupadds.component'
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -12,7 +13,8 @@ const routes: Routes = [
   { path: 'projects', component: ProjectsComponent },
   { path: 'tutorials', component: TutorialsComponent },
   { path: 'technicalwriting', component: TutorialsComponent },
-  { path: 'technicalwriting/raspberrypi', component: RaspberrypiwebserverComponent }
+  { path: 'technicalwriting/raspberrypi', component: RaspberrypiwebserverComponent },
+  { path: 'technicalwriting/setupadds', component: SetupaddsComponent }
 ];
 
 @NgModule({

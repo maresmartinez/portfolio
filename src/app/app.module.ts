@@ -17,6 +17,7 @@ import { AboutmeComponent } from './components/pages/aboutme/aboutme.component';
 import { ProjectsComponent } from './components/pages/projects/projects.component';
 import { TutorialsComponent } from './components/pages/tutorials/tutorials.component';
 import { RaspberrypiwebserverComponent } from './components/pages/tutorials/raspberrypiwebserver/raspberrypiwebserver.component';
+import { SetupaddsComponent } from './components/pages/tutorials/setupadds/setupadds.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { RaspberrypiwebserverComponent } from './components/pages/tutorials/rasp
     AboutmeComponent,
     ProjectsComponent,
     TutorialsComponent,
-    RaspberrypiwebserverComponent
+    RaspberrypiwebserverComponent,
+    SetupaddsComponent
   ],
   imports: [
     BrowserModule,
