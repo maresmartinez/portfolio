@@ -13,8 +13,8 @@
         commands. We will also be using commands to create new organizational units, security groups, and users. A
         Windows Client will also be added to the domain that we will create. Following this report and completing all
         these steps should help refine your skills using PowerShell.</p>
-      <p>Please note that throughout this report, any text with a blue background indicates that these are PowerShell
-        commands. These are highlighted so that you can simply copy and paste them into your own PowerShell terminals
+      <p>Please note that throughout this report, PowerShell commands are highlighted so that you can simply copy and
+        paste them into your own PowerShell terminals
         while following along. However, I’d recommend physically typing them out, so that you can become more familiar
         with the PowerShell syntax.</p>
     </div>
@@ -374,39 +374,47 @@
           </figure>
           <code>Get-ADUser -Filter * -SearchBase “OU=Techs,DC=marmarie,DC=lab”</code>
           <figure>
-              <img class="img-fluid" [src]="'assets/images/SetUpADDS/image019.png'"
-                alt="The PowerShell output shows the users kpine, sstills, and wwells in the Techs OU">
-            </figure>
+            <img class="img-fluid" [src]="'assets/images/SetUpADDS/image019.png'"
+              alt="The PowerShell output shows the users kpine, sstills, and wwells in the Techs OU">
+          </figure>
         </li>
       </ol>
       <h4>Logging in as a User on the Windows Clients</h4>
-      <p>Now that we have users on our domain, members of the domain will be able to sign in as these users. Let’s go back to our Windows Client to sign in. Here are the steps to sign in:</p>
+      <p>Now that we have users on our domain, members of the domain will be able to sign in as these users. Let’s go
+        back to our Windows Client to sign in. Here are the steps to sign in:</p>
       <ol>
         <li>From the login screen of your Windows client that is part of your server’s domain, select “Other user”</li>
-        <li><p>Enter in the user name for one of the users you created, and their associated password like so:</p>
+        <li>
+          <p>Enter in the user name for one of the users you created, and their associated password like so:</p>
           <figure>
-              <img class="img-fluid" [src]="'assets/images/SetUpADDS/image020.png'"
-                alt="Prompts to enter username and password">
-            </figure>
+            <img class="img-fluid" [src]="'assets/images/SetUpADDS/image020.png'"
+              alt="Prompts to enter username and password">
+          </figure>
         </li>
-        <li><p>You will be prompted to change your password, do so:</p>
+        <li>
+          <p>You will be prompted to change your password, do so:</p>
           <figure>
-              <img class="img-fluid" [src]="'assets/images/SetUpADDS/image021.png'"
-                alt="Prompts to enter the current password, and two fields to enter the new password, which should match">
-            </figure>
+            <img class="img-fluid" [src]="'assets/images/SetUpADDS/image021.png'"
+              alt="Prompts to enter the current password, and two fields to enter the new password, which should match">
+          </figure>
         </li>
-        <li><p>Take a look at the start screen, and you should see that you are signed in:</p>
+        <li>
+          <p>Take a look at the start screen, and you should see that you are signed in:</p>
           <figure>
-              <img class="img-fluid" [src]="'assets/images/SetUpADDS/image022.png'"
-                alt="The Windows 8.1 start screen, with the logged in user Scott Pilgrim highlighted in a red box">
-            </figure>
-            <p>Congratulations, you now have a working domain and users to log in as!</p>
-          </li>
+            <img class="img-fluid" [src]="'assets/images/SetUpADDS/image022.png'"
+              alt="The Windows 8.1 start screen, with the logged in user Scott Pilgrim highlighted in a red box">
+          </figure>
+          <p>Congratulations, you now have a working domain and users to log in as!</p>
+        </li>
       </ol>
     </div>
     <div class="container">
       <h3>Conclusion</h3>
-      <p>After following along with this report, you should have a fully configured Windows 2012 Server that has Active Directory installed and that has been promoted to a Domain Controller. You should have basic organizational units and security groups in place, and the tools to add as many users as you need to these groups. You should also have the knowledge to be able to add Windows clients to your domain and login. All of this should have helped refine your skills using Windows PowerShell. Thank you for following along.</p>
+      <p>After following along with this report, you should have a fully configured Windows 2012 Server that has Active
+        Directory installed and that has been promoted to a Domain Controller. You should have basic organizational
+        units and security groups in place, and the tools to add as many users as you need to these groups. You should
+        also have the knowledge to be able to add Windows clients to your domain and login. All of this should have
+        helped refine your skills using Windows PowerShell. Thank you for following along.</p>
     </div>
     <div class="container">
       <h3>References</h3>
@@ -414,17 +422,28 @@
         <li>Lecture material by Robert Pearce from SYST 23551 – Windows Administration, taken at Sheridan College</li>
         <li>Microsoft Windows Server 2012 PowerShell Documentation:
           <ul>
-            <li>o	Get-ADOrganizationalUnit: <a href="https://docs.microsoft.com/en-us/powershell/module/activedirectory/get-adorganizationalunit?view=winserver2012-ps">https://docs.microsoft.com/en-us/powershell/module/activedirectory/get-adorganizationalunit?view=winserver2012-ps</a></li>
-            <li>o	Get-ADGRoup: <a href="https://docs.microsoft.com/en-us/powershell/module/addsadministration/get-adgroup?view=win10-ps">https://docs.microsoft.com/en-us/powershell/module/addsadministration/get-adgroup?view=win10-ps</a></li>
-            <li>o	Get-ADUser: <a href="https://docs.microsoft.com/en-us/powershell/module/activedirectory/get-aduser?view=winserver2012-ps">https://docs.microsoft.com/en-us/powershell/module/activedirectory/get-aduser?view=winserver2012-ps</a></li>
+            <li>o Get-ADOrganizationalUnit: <a
+                href="https://docs.microsoft.com/en-us/powershell/module/activedirectory/get-adorganizationalunit?view=winserver2012-ps">https://docs.microsoft.com/en-us/powershell/module/activedirectory/get-adorganizationalunit?view=winserver2012-ps</a>
+            </li>
+            <li>o Get-ADGRoup: <a
+                href="https://docs.microsoft.com/en-us/powershell/module/addsadministration/get-adgroup?view=win10-ps">https://docs.microsoft.com/en-us/powershell/module/addsadministration/get-adgroup?view=win10-ps</a>
+            </li>
+            <li>o Get-ADUser: <a
+                href="https://docs.microsoft.com/en-us/powershell/module/activedirectory/get-aduser?view=winserver2012-ps">https://docs.microsoft.com/en-us/powershell/module/activedirectory/get-aduser?view=winserver2012-ps</a>
+            </li>
           </ul>
         </li>
-        <li>•	TechRepublic article by Jesus Vigo, How to switch between GUI and Core in Windows Server 2012 using PowerShell: <a href="https://www.techrepublic.com/article/how-to-switch-between-gui-and-core-in-windows-server-2012-using-powershell/">https://www.techrepublic.com/article/how-to-switch-between-gui-and-core-in-windows-server-2012-using-powershell/</a></li>
-        <li>•	Thomas Maurer article, Windows Server 2012 – Add and Remove GUI: <a href="https://www.thomasmaurer.ch/2012/05/windows-server-2012-add-and-remove-gui/">https://www.thomasmaurer.ch/2012/05/windows-server-2012-add-and-remove-gui/</a></li>
+        <li>• TechRepublic article by Jesus Vigo, How to switch between GUI and Core in Windows Server 2012 using
+          PowerShell: <a
+            href="https://www.techrepublic.com/article/how-to-switch-between-gui-and-core-in-windows-server-2012-using-powershell/">https://www.techrepublic.com/article/how-to-switch-between-gui-and-core-in-windows-server-2012-using-powershell/</a>
+        </li>
+        <li>• Thomas Maurer article, Windows Server 2012 – Add and Remove GUI: <a
+            href="https://www.thomasmaurer.ch/2012/05/windows-server-2012-add-and-remove-gui/">https://www.thomasmaurer.ch/2012/05/windows-server-2012-add-and-remove-gui/</a>
+        </li>
       </ol>
     </div>
     <div class="container">
-        <button class="btn btn-block btn-outline-dark" (click)="scrollToTop()">Back to Top</button>
-      </div>
+      <button class="btn btn-block btn-outline-dark" (click)="scrollToTop()">Back to Top</button>
+    </div>
   </div>
 </main>

@@ -18,6 +18,8 @@ import { ProjectsComponent } from './components/pages/projects/projects.componen
 import { TutorialsComponent } from './components/pages/tutorials/tutorials.component';
 import { RaspberrypiwebserverComponent } from './components/pages/tutorials/raspberrypiwebserver/raspberrypiwebserver.component';
 import { SetupaddsComponent } from './components/pages/tutorials/setupadds/setupadds.component';
+import { UsingwdsComponent } from './components/pages/tutorials/usingwds/usingwds.component';
+import { AddsforestComponent } from './components/pages/tutorials/addsforest/addsforest.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { SetupaddsComponent } from './components/pages/tutorials/setupadds/setup
     ProjectsComponent,
     TutorialsComponent,
     RaspberrypiwebserverComponent,
-    SetupaddsComponent
+    SetupaddsComponent,
+    UsingwdsComponent,
+    AddsforestComponent
   ],
   imports: [
     BrowserModule,

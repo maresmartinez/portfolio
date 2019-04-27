@@ -6,6 +6,8 @@ import { ProjectsComponent } from './components/pages/projects/projects.componen
 import { TutorialsComponent } from './components/pages/tutorials/tutorials.component';
 import { RaspberrypiwebserverComponent } from './components/pages/tutorials/raspberrypiwebserver/raspberrypiwebserver.component';
 import { SetupaddsComponent } from './components/pages/tutorials/setupadds/setupadds.component'
+import { UsingwdsComponent } from './components/pages/tutorials/usingwds/usingwds.component';
+import { AddsforestComponent } from './components/pages/tutorials/addsforest/addsforest.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -14,7 +16,9 @@ const routes: Routes = [
   { path: 'tutorials', component: TutorialsComponent },
   { path: 'technicalwriting', component: TutorialsComponent },
   { path: 'technicalwriting/raspberrypi', component: RaspberrypiwebserverComponent },
-  { path: 'technicalwriting/setupadds', component: SetupaddsComponent }
+  { path: 'technicalwriting/setupadds', component: SetupaddsComponent },
+  { path: 'technicalwriting/usingwds', component: UsingwdsComponent },
+  { path: 'technicalwriting/addsforest', component: AddsforestComponent }
 ];
 
 @NgModule({
