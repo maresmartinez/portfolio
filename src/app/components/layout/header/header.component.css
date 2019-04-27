@@ -3,6 +3,10 @@
   background-color: #B82601!important;
 }
 
+.dropdown-item {
+  text-transform: capitalize;
+}
+
 .navbar-brand {
   font-weight: bold;
   text-transform: capitalize;
@@ -11,4 +15,8 @@
 .first {
   color: #FFD700;
   text-transform: uppercase;
+}
+
+.dropdown-menu h6 {
+  margin-left: 25px!important;
 }

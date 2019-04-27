@@ -16,6 +16,7 @@ import { ShowcaseComponent } from './components/layout/showcase/showcase.compone
 import { AboutmeComponent } from './components/pages/aboutme/aboutme.component';
 import { ProjectsComponent } from './components/pages/projects/projects.component';
 import { TutorialsComponent } from './components/pages/tutorials/tutorials.component';
+import { RaspberrypiwebserverComponent } from './components/pages/tutorials/raspberrypiwebserver/raspberrypiwebserver.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { TutorialsComponent } from './components/pages/tutorials/tutorials.compo
     ShowcaseComponent,
     AboutmeComponent,
     ProjectsComponent,
-    TutorialsComponent
+    TutorialsComponent,
+    RaspberrypiwebserverComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,8 @@
+img {
+  max-width: 500px;
+}
+
+figcaption {
+  font-style: italic;
+  width: 100%;
+}
