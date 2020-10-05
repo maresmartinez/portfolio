@@ -15,17 +15,16 @@ export class GithubService {
 
   url = 'https://api.github.com';
   username = 'maresmartinez';
-  authorization = '?client_id=f2526e89e2f01b0ffe20&client_secret=b1ac637451676d3fbb3495bcfa2f59fd96f493e3';
 
   constructor(private http: HttpClient) { }
 
   getUser(): Observable<ProjectDetails> {
-    const url = `${this.url}/users/${this.username}${this.authorization}`;
+    const url = `${this.url}/users/${this.username}`;
     return this.http.get<ProjectDetails>(url, httpOptions);
   }
 
   getRepos(): Observable<ProjectDetails[]> {
-    const url = `${this.url}/users/${this.username}/repos${this.authorization}&sort=updated`;
+    const url = `${this.url}/users/${this.username}/repos?sort=updated`;
     return this.http.get<ProjectDetails[]>(url, httpOptions);
   }
 }
